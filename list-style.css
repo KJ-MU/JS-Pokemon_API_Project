@@ -73,3 +73,59 @@ body {
   font-weight: 900;
   font-size: 4rem;
 }
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #header-container {
+    margin: 5.5rem;
+    margin-bottom: 8rem;
+    height: 23.6rem;
+    width: 90rem;
+  }
+
+  #header-q {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+  #header-container {
+    margin: 4.5rem;
+    margin-top: 0px;
+    margin-bottom: 5rem;
+    height: 23.6rem;
+    width: 75rem;
+  }
+
+  #header-q {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 750px) {
+  #header-container {
+    margin: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 3rem;
+    height: 16.6rem;
+    width: 35rem;
+  }
+
+  #header-q {
+    font-size: 2rem;
+  }
+  .pokemon-card {
+    height: 14rem;
+    width: 30rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .list-text {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  #logo-img {
+    height: auto;
+    width: 10rem;
+    margin: 3rem;
+    margin-top: 3rem;
+  }
+}

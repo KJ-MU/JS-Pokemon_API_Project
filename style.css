@@ -38,7 +38,7 @@ body {
 #hero-img {
   position: absolute;
   left: 80rem;
-  height: 58rem;
+
   height: 45rem;
   top: 12rem;
 }
@@ -78,4 +78,51 @@ p {
   border-radius: 15px;
   font-family: inter;
   font-weight: 700;
+}
+button:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  #hero-img {
+    left: 50rem;
+  }
+}
+@media (min-width: 680px) and (max-width: 768px) {
+  #hero-img {
+    left: 45rem;
+    height: 30rem;
+    top: 25rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 680px) {
+  #main-container {
+    width: 100%;
+    height: 120hv;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    letter-spacing: -1px;
+    font-weight: 650;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1rem;
+
+    margin-top: 0px;
+  }
+  #logo-img {
+    height: auto;
+    width: 9rem;
+    margin: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+  #hero-img {
+    left: 4rem;
+    height: 30rem;
+    top: 25rem;
+  }
 }

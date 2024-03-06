@@ -1,46 +1,135 @@
-:root root {
-    --main-color: #bfebee;
+:root {
+  --main-color: #bfebee;
 
-    --primer-color: #e4feff;
-    --text-color: #4763aa;
+  --primer-color: #e4feff;
+  --text-color: #4763aa;
 
-    --miner-color: #f8d326;
+  --miner-color: #f8d326;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #bfebee;
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bfebee;
 }
 
 #logo-img {
-    height: 5rem;
-    width: 16rem;
-    margin: 5rem;
-    margin-right: 120rem;
-
+  height: 5rem;
+  width: 16rem;
+  margin: 5rem;
+  margin-right: 120rem;
 }
 
 #pokemon-card-container {
-    border-style: solid;
-    border-width: 3px;
-    border-color: #4763aa;
-    border-radius: 30px;
-    height: 30%;
-    width: 60%;
-    background-color: #e4feff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #4763aa;
+  border-radius: 30px;
+  height: auto;
+  width: 65%;
+  background-color: #e4feff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  color: #4763aa;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
-.pokemon-img
+.pokemon-img {
+  height: auto;
+  width: 15rem;
+}
+
+#pokemon-name {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 1rem;
+}
+#pokemon-type {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 1rem;
+}
+#pokemon-properties {
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 3rem;
+}
+#property-item {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  gap: 3rem;
+}
+.property-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.list-item {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+@media (min-width: 950px) and (max-width: 1300px) {
+  #logo-img {
+    margin-right: 90rem;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 950px) {
+  #logo-img {
+    margin-right: 65rem;
+  }
+}
+
+@media (min-width: 510px) and (max-width: 660px) {
+  #logo-img {
+    height: auto;
+    width: 10rem;
+    margin: 3rem;
+    margin-right: 45rem;
+  }
+}
+@media (min-width: 410px) and (max-width: 510px) {
+  #logo-img {
+    height: auto;
+    width: 10rem;
+    margin: 3rem;
+    margin-right: 32rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 410px) {
+  #logo-img {
+    height: auto;
+    width: 10rem;
+    margin: 3rem;
+    margin-right: 28rem;
+  }
+}
