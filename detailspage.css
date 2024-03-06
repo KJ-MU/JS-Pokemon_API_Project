@@ -47,7 +47,7 @@ body {
   font-variation-settings: "slnt" 0;
 }
 
-.pokemon-img {
+#pokemon-img {
   height: auto;
   width: 15rem;
 }
@@ -56,6 +56,7 @@ body {
   font-size: 4rem;
   font-weight: 900;
   margin: 1rem;
+  text-transform: uppercase;
 }
 #pokemon-type {
   font-size: 1.8rem;
@@ -82,20 +83,24 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0;
-  gap: 3rem;
+  gap: 4rem;
 }
 .property-list {
-  list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  margin-top: 10px;
   gap: 5px;
 }
 .list-item {
   font-weight: 500;
   margin-bottom: 5px;
+}
+.property {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 @media (min-width: 950px) and (max-width: 1300px) {
   #logo-img {
