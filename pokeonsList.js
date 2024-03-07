@@ -2,17 +2,19 @@ const pokemonsContainer = document.getElementById("pokemon-list");
 
 async function getPokemons() {
   try {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20");
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=50");
     if (!response.ok) {
       return null;
     }
 
     const data = await response.json();
+    console.log(data);
 
     return data.results;
   } catch (error) {
     return null;
   }
+  console.log(data);
 }
 
 async function displayPokemons() {
@@ -40,3 +42,11 @@ async function displayPokemons() {
 }
 
 displayPokemons();
+
+const searchBtn = document.getElementById("search-pok");
+
+searchBtn.addEventListener("click", (event) => {
+  const searchValue = document.getElementById("pokNameInput").value;
+
+  window.location.href = `./pokemon-details.html?name=${searchValue.toLowerCase()}`;
+});

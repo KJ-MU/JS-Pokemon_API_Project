@@ -19,11 +19,20 @@ body {
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
+#header-container {
+  display: flex;
+  flex-direction: column;
+}
 #logo-img {
   height: 5rem;
   width: 16rem;
   margin: 5rem;
   margin-top: 3rem;
+}
+#pokNameInput {
+  border-radius: 30px;
+  width: 20rem;
+  border-color: #4763aa;
 }
 
 #header-container {
@@ -81,6 +90,21 @@ body {
   height: auto;
   width: 100px;
 }
+#search-pok {
+  font-size: 2rem;
+  width: 10rem;
+  height: auto;
+  background-color: rgb(248, 211, 38);
+  color: var(--text-color);
+  border: 0px;
+  border-radius: 30px;
+  font-family: inter;
+  font-weight: 700;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (min-width: 1000px) and (max-width: 1200px) {
   #header-container {
@@ -117,7 +141,7 @@ body {
   }
 
   #header-q {
-    font-size: 0.5rem;
+    font-size: 2rem;
   }
   .pokemon-card {
     height: 14rem;
@@ -137,33 +161,3 @@ body {
     margin-top: 3rem;
   }
 }
-/* @media (min-width: 0px) and (max-width: 360px) {
-  #header-container {
-    margin: 2.5rem;
-    margin-top: 0px;
-    margin-bottom: 3rem;
-    height: 16.6rem;
-    width: 90%;
-  }
-
-  #header-q {
-    font-size: 0.5rem;
-  }
-  .pokemon-card {
-    height: 14rem;
-    width: 30rem;
-    margin-right: 19px;
-    display: flex;
-    align-items: center;
-  }
-  .list-text {
-    font-weight: 700;
-    font-size: 2rem;
-  }
-  #logo-img {
-    height: auto;
-    width: 10rem;
-    margin: 3rem;
-    margin-top: 3rem;
-  }
-} */
